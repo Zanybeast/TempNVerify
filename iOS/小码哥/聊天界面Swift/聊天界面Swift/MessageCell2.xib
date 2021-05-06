@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="123" id="KGk-i7-Jjw" customClass="MessageCell2" customModule="聊天界面Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="502" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYX-kA-FZe">
+                        <rect key="frame" x="10" y="5" width="482" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="fA0-Ot-DlU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRL-7M-Wtf">
+                        <rect key="frame" x="10" y="35" width="50" height="78"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="other" translatesAutoresizingMaskIntoConstraints="NO" id="ief-u3-uHU">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1kw-5z-Dws"/>
+                                    <constraint firstAttribute="height" constant="50" id="NM0-JC-kAC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="LLN-8d-sVL"/>
+                            <constraint firstItem="ief-u3-uHU" firstAttribute="top" secondItem="uRL-7M-Wtf" secondAttribute="top" id="QxY-mf-x4P"/>
+                            <constraint firstItem="ief-u3-uHU" firstAttribute="leading" secondItem="uRL-7M-Wtf" secondAttribute="leading" id="T2O-pf-Di1"/>
+                            <constraint firstAttribute="trailing" secondItem="ief-u3-uHU" secondAttribute="trailing" id="dWI-uB-e5F"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_recive_nor" translatesAutoresizingMaskIntoConstraints="NO" id="aZ9-Qv-Fb1">
+                        <rect key="frame" x="65" y="35" width="76.5" height="56"/>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXm-nr-gEi">
+                        <rect key="frame" x="85" y="50" width="41.5" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="T8K-cb-7YE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aZ9-Qv-Fb1" firstAttribute="leading" secondItem="BXm-nr-gEi" secondAttribute="leading" constant="-20" id="1yR-Gl-vpW"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BXm-nr-gEi" secondAttribute="trailing" constant="70" id="4ao-oE-Vox"/>
+                    <constraint firstItem="uRL-7M-Wtf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Cm4-GD-zIC"/>
+                    <constraint firstItem="aZ9-Qv-Fb1" firstAttribute="trailing" secondItem="BXm-nr-gEi" secondAttribute="trailing" constant="15" id="DgS-7Y-FW8"/>
+                    <constraint firstItem="BYX-kA-FZe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="EUm-Gf-5mq"/>
+                    <constraint firstItem="BYX-kA-FZe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Fsv-9g-xTd"/>
+                    <constraint firstItem="uRL-7M-Wtf" firstAttribute="top" secondItem="BYX-kA-FZe" secondAttribute="bottom" constant="10" id="JfL-Ua-NSE"/>
+                    <constraint firstItem="BXm-nr-gEi" firstAttribute="leading" secondItem="uRL-7M-Wtf" secondAttribute="trailing" constant="25" id="QqI-3a-fk5"/>
+                    <constraint firstItem="aZ9-Qv-Fb1" firstAttribute="bottom" secondItem="BXm-nr-gEi" secondAttribute="bottom" constant="15" id="W12-bQ-I0h"/>
+                    <constraint firstItem="aZ9-Qv-Fb1" firstAttribute="top" secondItem="BXm-nr-gEi" secondAttribute="top" constant="-15" id="Xyb-VV-0H1"/>
+                    <constraint firstItem="BXm-nr-gEi" firstAttribute="top" secondItem="uRL-7M-Wtf" secondAttribute="top" constant="15" id="dTB-bC-pDw"/>
+                    <constraint firstAttribute="bottom" secondItem="uRL-7M-Wtf" secondAttribute="bottom" constant="10" id="ev7-Es-eCW"/>
+                    <constraint firstAttribute="trailing" secondItem="BYX-kA-FZe" secondAttribute="trailing" constant="10" id="hFg-hL-Q9J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageBg" destination="aZ9-Qv-Fb1" id="mvK-6O-IHf"/>
+                <outlet property="messageLabel" destination="BXm-nr-gEi" id="o2z-sJ-Ufd"/>
+                <outlet property="timeLabel" destination="BYX-kA-FZe" id="aud-u4-DvD"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="108.81696428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_recive_nor" width="48.5" height="56"/>
+        <image name="other" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

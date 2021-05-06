@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3E90292257946FE0010D2BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E90291257946FE0010D2BF /* AppDelegate.m */; };
+		C3E90295257946FE0010D2BF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E90294257946FE0010D2BF /* SceneDelegate.m */; };
+		C3E90298257946FE0010D2BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E90297257946FE0010D2BF /* ViewController.m */; };
+		C3E9029B257946FE0010D2BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E90299257946FE0010D2BF /* Main.storyboard */; };
+		C3E9029D257946FE0010D2BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E9029C257946FE0010D2BF /* Assets.xcassets */; };
+		C3E902A0257946FE0010D2BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E9029E257946FE0010D2BF /* LaunchScreen.storyboard */; };
+		C3E902A3257946FE0010D2BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E902A2257946FE0010D2BF /* main.m */; };
+		C3E902AD257946FE0010D2BF /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E902AC257946FE0010D2BF /* ______Tests.m */; };
+		C3E902B8257946FE0010D2BF /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E902B7257946FE0010D2BF /* ______UITests.m */; };
+		C3E902CA257947BB0010D2BF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E902C9257947BB0010D2BF /* SecondViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3E902A9257946FE0010D2BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3E90285257946FE0010D2BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3E9028C257946FE0010D2BF;
+			remoteInfo = "测试反向传值";
+		};
+		C3E902B4257946FE0010D2BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3E90285257946FE0010D2BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3E9028C257946FE0010D2BF;
+			remoteInfo = "测试反向传值";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3E9028D257946FE0010D2BF /* 测试反向传值.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "测试反向传值.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E90290257946FE0010D2BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3E90291257946FE0010D2BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3E90293257946FE0010D2BF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C3E90294257946FE0010D2BF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C3E90296257946FE0010D2BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C3E90297257946FE0010D2BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C3E9029A257946FE0010D2BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3E9029C257946FE0010D2BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3E9029F257946FE0010D2BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3E902A1257946FE0010D2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E902A2257946FE0010D2BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3E902A8257946FE0010D2BF /* 测试反向传值Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "测试反向传值Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E902AC257946FE0010D2BF /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		C3E902AE257946FE0010D2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E902B3257946FE0010D2BF /* 测试反向传值UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "测试反向传值UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E902B7257946FE0010D2BF /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
+		C3E902B9257946FE0010D2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E902C8257947BB0010D2BF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C3E902C9257947BB0010D2BF /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3E9028A257946FE0010D2BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E902A5257946FE0010D2BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E902B0257946FE0010D2BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3E90284257946FE0010D2BF = {
+			isa = PBXGroup;
+			children = (
+				C3E9028F257946FE0010D2BF /* 测试反向传值 */,
+				C3E902AB257946FE0010D2BF /* 测试反向传值Tests */,
+				C3E902B6257946FE0010D2BF /* 测试反向传值UITests */,
+				C3E9028E257946FE0010D2BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3E9028E257946FE0010D2BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3E9028D257946FE0010D2BF /* 测试反向传值.app */,
+				C3E902A8257946FE0010D2BF /* 测试反向传值Tests.xctest */,
+				C3E902B3257946FE0010D2BF /* 测试反向传值UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3E9028F257946FE0010D2BF /* 测试反向传值 */ = {
+			isa = PBXGroup;
+			children = (
+				C3E90290257946FE0010D2BF /* AppDelegate.h */,
+				C3E90291257946FE0010D2BF /* AppDelegate.m */,
+				C3E90293257946FE0010D2BF /* SceneDelegate.h */,
+				C3E90294257946FE0010D2BF /* SceneDelegate.m */,
+				C3E90296257946FE0010D2BF /* ViewController.h */,
+				C3E90297257946FE0010D2BF /* ViewController.m */,
+				C3E902C8257947BB0010D2BF /* SecondViewController.h */,
+				C3E902C9257947BB0010D2BF /* SecondViewController.m */,
+				C3E90299257946FE0010D2BF /* Main.storyboard */,
+				C3E9029C257946FE0010D2BF /* Assets.xcassets */,
+				C3E9029E257946FE0010D2BF /* LaunchScreen.storyboard */,
+				C3E902A1257946FE0010D2BF /* Info.plist */,
+				C3E902A2257946FE0010D2BF /* main.m */,
+			);
+			path = "测试反向传值";
+			sourceTree = "<group>";
+		};
+		C3E902AB257946FE0010D2BF /* 测试反向传值Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C3E902AC257946FE0010D2BF /* ______Tests.m */,
+				C3E902AE257946FE0010D2BF /* Info.plist */,
+			);
+			path = "测试反向传值Tests";
+			sourceTree = "<group>";
+		};
+		C3E902B6257946FE0010D2BF /* 测试反向传值UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3E902B7257946FE0010D2BF /* ______UITests.m */,
+				C3E902B9257946FE0010D2BF /* Info.plist */,
+			);
+			path = "测试反向传值UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3E9028C257946FE0010D2BF /* 测试反向传值 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E902BC257946FE0010D2BF /* Build configuration list for PBXNativeTarget "测试反向传值" */;
+			buildPhases = (
+				C3E90289257946FE0010D2BF /* Sources */,
+				C3E9028A257946FE0010D2BF /* Frameworks */,
+				C3E9028B257946FE0010D2BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "测试反向传值";
+			productName = "测试反向传值";
+			productReference = C3E9028D257946FE0010D2BF /* 测试反向传值.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3E902A7257946FE0010D2BF /* 测试反向传值Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E902BF257946FE0010D2BF /* Build configuration list for PBXNativeTarget "测试反向传值Tests" */;
+			buildPhases = (
+				C3E902A4257946FE0010D2BF /* Sources */,
+				C3E902A5257946FE0010D2BF /* Frameworks */,
+				C3E902A6257946FE0010D2BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3E902AA257946FE0010D2BF /* PBXTargetDependency */,
+			);
+			name = "测试反向传值Tests";
+			productName = "测试反向传值Tests";
+			productReference = C3E902A8257946FE0010D2BF /* 测试反向传值Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3E902B2257946FE0010D2BF /* 测试反向传值UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E902C2257946FE0010D2BF /* Build configuration list for PBXNativeTarget "测试反向传值UITests" */;
+			buildPhases = (
+				C3E902AF257946FE0010D2BF /* Sources */,
+				C3E902B0257946FE0010D2BF /* Frameworks */,
+				C3E902B1257946FE0010D2BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3E902B5257946FE0010D2BF /* PBXTargetDependency */,
+			);
+			name = "测试反向传值UITests";
+			productName = "测试反向传值UITests";
+			productReference = C3E902B3257946FE0010D2BF /* 测试反向传值UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3E90285257946FE0010D2BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					C3E9028C257946FE0010D2BF = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					C3E902A7257946FE0010D2BF = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = C3E9028C257946FE0010D2BF;
+					};
+					C3E902B2257946FE0010D2BF = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = C3E9028C257946FE0010D2BF;
+					};
+				};
+			};
+			buildConfigurationList = C3E90288257946FE0010D2BF /* Build configuration list for PBXProject "测试反向传值" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3E90284257946FE0010D2BF;
+			productRefGroup = C3E9028E257946FE0010D2BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3E9028C257946FE0010D2BF /* 测试反向传值 */,
+				C3E902A7257946FE0010D2BF /* 测试反向传值Tests */,
+				C3E902B2257946FE0010D2BF /* 测试反向传值UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3E9028B257946FE0010D2BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E902A0257946FE0010D2BF /* LaunchScreen.storyboard in Resources */,
+				C3E9029D257946FE0010D2BF /* Assets.xcassets in Resources */,
+				C3E9029B257946FE0010D2BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E902A6257946FE0010D2BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E902B1257946FE0010D2BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3E90289257946FE0010D2BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E902CA257947BB0010D2BF /* SecondViewController.m in Sources */,
+				C3E90298257946FE0010D2BF /* ViewController.m in Sources */,
+				C3E90292257946FE0010D2BF /* AppDelegate.m in Sources */,
+				C3E902A3257946FE0010D2BF /* main.m in Sources */,
+				C3E90295257946FE0010D2BF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E902A4257946FE0010D2BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E902AD257946FE0010D2BF /* ______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E902AF257946FE0010D2BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3E902B8257946FE0010D2BF /* ______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3E902AA257946FE0010D2BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3E9028C257946FE0010D2BF /* 测试反向传值 */;
+			targetProxy = C3E902A9257946FE0010D2BF /* PBXContainerItemProxy */;
+		};
+		C3E902B5257946FE0010D2BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3E9028C257946FE0010D2BF /* 测试反向传值 */;
+			targetProxy = C3E902B4257946FE0010D2BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3E90299257946FE0010D2BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3E9029A257946FE0010D2BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3E9029E257946FE0010D2BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3E9029F257946FE0010D2BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3E902BA257946FE0010D2BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3E902BB257946FE0010D2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3E902BD257946FE0010D2BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H84TMMB74J;
+				INFOPLIST_FILE = "测试反向传值/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlzeng.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3E902BE257946FE0010D2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H84TMMB74J;
+				INFOPLIST_FILE = "测试反向传值/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlzeng.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3E902C0257946FE0010D2BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H84TMMB74J;
+				INFOPLIST_FILE = "测试反向传值Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlzeng.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/测试反向传值.app/测试反向传值";
+			};
+			name = Debug;
+		};
+		C3E902C1257946FE0010D2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H84TMMB74J;
+				INFOPLIST_FILE = "测试反向传值Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlzeng.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/测试反向传值.app/测试反向传值";
+			};
+			name = Release;
+		};
+		C3E902C3257946FE0010D2BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H84TMMB74J;
+				INFOPLIST_FILE = "测试反向传值UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlzeng.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "测试反向传值";
+			};
+			name = Debug;
+		};
+		C3E902C4257946FE0010D2BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H84TMMB74J;
+				INFOPLIST_FILE = "测试反向传值UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carlzeng.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "测试反向传值";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3E90288257946FE0010D2BF /* Build configuration list for PBXProject "测试反向传值" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E902BA257946FE0010D2BF /* Debug */,
+				C3E902BB257946FE0010D2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E902BC257946FE0010D2BF /* Build configuration list for PBXNativeTarget "测试反向传值" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E902BD257946FE0010D2BF /* Debug */,
+				C3E902BE257946FE0010D2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E902BF257946FE0010D2BF /* Build configuration list for PBXNativeTarget "测试反向传值Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E902C0257946FE0010D2BF /* Debug */,
+				C3E902C1257946FE0010D2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E902C2257946FE0010D2BF /* Build configuration list for PBXNativeTarget "测试反向传值UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E902C3257946FE0010D2BF /* Debug */,
+				C3E902C4257946FE0010D2BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3E90285257946FE0010D2BF /* Project object */;
+}

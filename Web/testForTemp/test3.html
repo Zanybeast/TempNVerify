@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        body,
+        html,
+        iframe {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background-color: transparent
+        }
+    </style>
+    <script type="application/javascript">
+    </script>
+</head>
+
+
+<body style="margin:0;padding:0;">
+
+    <img src="https://ads.staging.newsochub.com/impression?id=2cd771b7-38cc-44b8-ab68-f5b20f4203c6" width="1"
+        height="1" />
+
+    <script type="application/javascript">
+        var debug = false;
+        var pbt = [302];
+        var width = 300;
+        var height = 250;
+
+        function trace(...args) {
+            if (!debug)
+                return;
+            console.debug(...args)
+        }
+
+        function createPbtFrame(src, w, h) {
+            var f = document.createElement("iframe");
+
+            f.style.width = w;
+            f.style.height = h;
+            f.setAttribute("scrolling", "no");
+            f.setAttribute("frameborder", "0");
+            f.setAttribute("width", w);
+            f.setAttribute("height", h);
+            f.setAttribute("src", src);
+
+            return f;
+        }
+
+        function nextPbtUrl() {
+            var id, url;
+            trace("PBT stack", pbt);
+
+            if (pbt.length < 1) {
+                return null;
+            }
+            id = pbt.shift();
+            url = "https://ads.staging.newsochub.com/show/tag?tag=" + id + "&t=" + Date.now() + "&loc=";
+            return url;
+        }
+
+        var url = nextPbtUrl();
+        var pbtFrame = null;
+        if (url) {
+            pbtFrame = createPbtFrame(url, width, height);
+            if (document.body.firstChild) {
+                document.body.insertBefore(pbtFrame, document.body.firstChild)
+            }
+            else {
+                document.body.appendChild(pbtFrame);
+            }
+        }
+
+        function messageHandler(event) {
+            var data = event.data;
+            if (!data.i || data.i !== 'test') {
+                return;
+            }
+
+            event.stopPropagation();
+
+            trace(event);
+
+            if (pbt.length < 1) {
+                if (window.removeEventListener) {
+                    window.removeEventListener("message", messageHandler);
+                }
+                else if (window.detachEvent) {
+                    window.detachEvent("onmessage", messageHandler);
+                }
+                else {
+                    console.error("Can't remove message event listener");
+                }
+                document.body.removeChild(pbtFrame);
+                return;
+            }
+
+            var url = nextPbtUrl();
+            pbtFrame.setAttribute('src', url);
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener("message", messageHandler, false);
+        }
+        else if (window.detachEvent) {
+            window.attachEvent("onmessage", messageHandler);
+        }
+        else {
+            console.error("Can't set message event listener");
+        }
+    </script>
+</body>
+
+</html>
